@@ -1,0 +1,32 @@
+SSILE WEAPON RANGES
+
+Weapon 	ROF** 	Range S* 	Range M* 	Range L*
+Arquebus 	1/3 	5 	15 	21
+Blowgun 	2/1 	1 	2 	3
+Comp. Long Bow, Flight Arrow 	2/1 	6 	12 	21
+Comp. Long Bow, Sheaf Arrow 	2/1 	4 	8 	17
+Comp. Short Bow 	2/1 	5 	10 	18
+Longbow, Flight Arrow 	2/1 	7 	14 	21
+Longbow, Sheaf Arrow 	2/1 	5 	10 	27
+Short Bow 	2/1 	5 	10 	15
+Club 	1 	1 	2 	3
+Hand Crossbow 	1 	2 	4 	6
+Heavy Crossbow 	1/2 	8 	16 	24
+Light Crossbow 	1 	6 	12 	18
+Dagger 	2/1 	1 	2 	3
+Dart 	3/1 	1 	2 	4
+Hammer 	1 	1 	2 	3
+Hand Axe 	1 	1 	2 	3
+Harpoon 	1 	1 	2 	3
+Javelin 	1 	2 	4 	6
+Knife 	2/1 	1 	2 	3
+Sling Bullet 	1 	5 	10 	20
+Sling Stone 	1 	4 	8 	16
+Spear 	1 	1 	2 	3
+Staff Sling Bullet 	2/1 	- 	3-6 	9
+Staff Sling Stone 	2/1 	- 	3-6 	9
+
+* Range is given in tens of yards.  Each range category (S=Short, M=Medium, L=Long) includes attacks from distances equal to or less than the given range.
+** "rof" is the rate of fire - How many shots that weapon can fire off in one round.  This is independent of the number of melee attacks a character can make in a round.
+The Modifiers for range are -2 for medium range, and -5 for long range.  Arquebus (if allowed) double all range modifiers.
+

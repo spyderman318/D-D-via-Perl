@@ -1,0 +1,56 @@
+#!/usr/local/bin/perl
+#
+# transfix - uses the scripts "lc" and "fix" to give a pseudo-translation
+# of whatever textfile you feed it.
+#
+# Usage: transfix [textfile] [datafile]
+#
+# The textfile can be anything -- preferably a long list of short sentences.
+# The datafile is the name of the "lc" datafile you want to use.
+#
+# You must have "lc" and "fix" available.  Don't expect too much from
+# this script.  The output looks OK, but it doesn't work magic.
+#
+# Written by Christopher Pound (pound@rice.edu) November 1996.
+#
+srand(time);
+$lang=pop(@ARGV);
+$file=pop(@ARGV);
+open(F,"cat $file| tr 'A-Z' 'a-z'|") || die "Could not open $file\n";
+@text=<F>;
+close(F);
+foreach $i (@text) {
+  @words=split(/\s+/,$i);
+  foreach $j (@words) {
+    $allw{$j}=1;
+    $c++;
+  }
+}
+open(L,"lc -$c $lang | fix |") || die "Could not get language data\n";
+@new=<L>;
+close(L);
+foreach $w (keys %allw) {
+  $m=splice(@new, rand @new, 1) || die "Ran out of words\n";
+  chop($m);
+  $z=$m;
+  if (length($w) < 4) {
+    $#sho=0;
+    $t1=substr($m,0,1);
+    $t2=substr($m,0,2);
+    $t3=substr($m,0,3);
+    if ($t3=~/[aeiouy]/) { push(@sho,$t3); }
+    if ($t2=~/[aeiouy]/) { push(@sho,$t2); }
+    if ($t1=~/[aeiouy]/) { push(@sho,$t1); }
+    $z=$sho[rand @sho];
+  }
+  $z=~s/\s+//g;
+  $allw{$w}=$z;
+}
+foreach $i (@text) {
+  $#words=0;
+  @words=split(/\s+/,$i);
+  foreach $j (@words) {
+    print "$allw{$j} " unless (length($allw{$j})<1);
+  }
+  print "\n";
+}

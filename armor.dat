@@ -1,0 +1,45 @@
+ARMOR*
+
+Type 	Cost 	Weight (lbs.)
+Banded Mail 	200 gp 	35
+Brigandine 	120 gp 	35
+Bronze Plate Mail 	400 gp 	45
+Chain Mail 	75 gp 	40
+Field Plate 	2,000 gp 	60
+Full Plate 	4,000-10,000 gp 	70
+Helmet 	- 	-
+     Great Helm 	30 gp 	10
+     Basinet 	8 gp 	5
+Hide 	15 gp 	30
+Leather 	5 gp 	15
+Padded 	4 gp 	10
+Plate Mail 	600 gp 	50
+Ring Mail 	100 gp 	30
+Scale Mail 	120 gp 	40
+Shield 	- 	-
+     Body 	10 gp 	15
+     Buckler 	1 gp 	3
+     Medium 	7 gp 	10
+     Small 	3 gp 	5
+Splint Mail 	80 gp 	40
+Studded Leather 	20 gp 	25
+
+* See chart below for Armor Class ratings of various types of armor.
+
+
+ARMOR CLASS RATINGS
+
+Type of Armor 	AC Rating
+None 	10
+Shield Only 	9
+Leather or Padded Armor 	8
+Leather or Padded Armor + Shield; Studded Leather or Ring Mail Armor 	7
+Studded Leather or Ring Mail Armor + Shield; Brigandine, Scale Mail or Hide Armor 	6
+Scale Mail or Hide + Shield; Chain Mail 	5
+Chain Mail + Shield; Splint Mail or Banded Mail or Bronze Plate Mail 	4
+Splint Mail, Banded Mail, or Bronze Plate Mail + Shield; Field Plate Mail 	3
+Plate Mail + Shield; Field Plate 	2
+Field Plate Armor + Shield; Full Plate 	1
+Full Plate + Shield 	0
+
+
